@@ -4,15 +4,15 @@ public class RouterWifi {
     private String nombreRed;
     private String contrasena;
 
-    //constructor privado, para solo una instancia
+    //constructor privado, para solo una instancia, dos atributos
     private RouterWifi() {
-        this.nombreRed = "Mi_Red_Wifi";
+        this.nombreRed = "WIFIUAO"; 
         this.contrasena = "12345678";
     }
 
     // metodo para obtener la instancia
-    public static RouterWifi getInstance() {
-        if (instancia == null) {
+    public static RouterWifi getInstancia() {
+        if (instancia == null) { // verifica si ya la instancia existe, sino la crea
             instancia = new RouterWifi();
         }
         return instancia;
