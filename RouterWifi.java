@@ -4,7 +4,7 @@ public class RouterWifi {
     private String nombreRed;
     private String contrasena;
 
-    //constructor privado
+    //constructor privado, para solo una instancia
     private RouterWifi() {
         this.nombreRed = "Mi_Red_Wifi";
         this.contrasena = "12345678";
@@ -20,7 +20,7 @@ public class RouterWifi {
 
     // simula la conexión de un dispositivo al router
     public void conectarDispositivo(String dispositivo) {
-        System.out.println(dispositivo + " se ha conectado a " + nombreRed + " con la contraseña " + contrasena);
+        System.out.println(dispositivo + " se ha conectado satisfactoriamente a " + nombreRed + " con la contraseña " + contrasena);
     }
 }
 
